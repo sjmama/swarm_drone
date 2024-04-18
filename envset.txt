@@ -1,8 +1,0 @@
-https://www.youtube.com/watch?v=zTa9MdKij0g&list=PLg93_MFmLWh2SbQh6xUKxjQ4aoMN700GB&index=2&pp=iAQB
-에서 환경 참고해서 세팅함
-mavlink로 통신 하는거 어떻게 되는건지 예제 코드 보고 파악 할수 있으면 좋겠음
-airsim으로 시뮬레이션 해보는건 어떤가 하는 생각이 드는데 멀티 드론 시뮬레이션이 되는가 모르겠음
-현재는 QControlGround랑 jmavsim으로 구성 하려 하고있음
-현재 목표는 드론 세대를 띄우고 드론 A, C 사이에서 드론 B가 서버와 직접 통신없이 a와 c중 더 가까운 드론을 중계삼아
-통신 하게 하고싶음
-

@@ -1,0 +1,27 @@
+https://www.youtube.com/watch?v=zTa9MdKij0g&list=PLg93_MFmLWh2SbQh6xUKxjQ4aoMN700GB&index=2&pp=iAQB
+에서 환경 참고해서 세팅함
+mavlink로 통신 하는거 어떻게 되는건지 예제 코드 보고 파악 할수 있으면 좋겠음
+airsim으로 시뮬레이션 해보는건 어떤가 하는 생각이 드는데 멀티 드론 시뮬레이션이 되는가 모르겠음
+현재는 QControlGround랑 jmavsim으로 구성 하려 하고있음
+현재 목표는 드론 세대를 띄우고 드론 A, C 사이에서 드론 B가 서버와 직접 통신없이 a와 c중 더 가까운 드론을 중계삼아
+통신 하게 하고싶음
+
+드론은 하트비트를 보냄
+하트비트 3초동안 안보내면 끊긴걸로 간주
+
+명령을 mavlink로 보내면 px4가 드론안에 있는데 이게 구독에서 명령어 받아서 수행함
+
+mavlink에서 commandlong 이라는 구조체에 명령이 들어가는데 여기에 옆친구 명령어도 같이 보내면 될듯
+
+mavlink 텔레메트리 보면 위치 보는게 있는듯
+
+하트비트에서 주변 드론 정보를 유지하면 좋겠는데 아직 px4는 못들여다봄
+
+위치를 기반으로 주변 드론 알아야하는데 이건 px4에서 하는건지 mavlink에서 여러 드론 제어하니까 여기서 위치정보를 받아다가 넣어줄지 모르겠음
+
+https://www.youtube.com/watch?v=B_lyPpnTC6I&list=PLg93_MFmLWh2SbQh6xUKxjQ4aoMN700GB&index=3
+이거 보고 설치함
+
+make px4_sitl jmavsim
+
+./QGroundControl.AppImage
